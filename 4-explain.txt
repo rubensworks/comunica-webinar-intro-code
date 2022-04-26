@@ -1,0 +1,10 @@
+comunica-sparql
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    -f q.sparql --explain parsed
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    -f q.sparql --explain logical
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    -f q.sparql --explain physical

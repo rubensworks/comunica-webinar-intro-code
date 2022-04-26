@@ -1,0 +1,20 @@
+comunica-sparql
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "SELECT * WHERE { ?s ?p ?o } LIMIT 100"
+
+comunica-sparql --listformats
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "SELECT * WHERE { ?s ?p ?o } LIMIT 100" -t text/csv
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100"
+
+comunica-sparql --listformats
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "CONSTRUCT WHERE { ?s ?p ?o } LIMIT 100" -t application/json
+
+comunica-sparql https://fragments.dbpedia.org/2016-04/en \
+    "SELECT * WHERE { ?s ?p ?o } LIMIT 100" -l debug

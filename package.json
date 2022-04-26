@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@comunica/query-sparql": "^2.2.1"
+    "@comunica/query-sparql": "^2.2.1",
+    "n3": "^1.16.1",
+    "rdf-data-factory": "^1.1.0"
   }
 }
